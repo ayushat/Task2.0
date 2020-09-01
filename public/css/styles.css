@@ -1,0 +1,81 @@
+html,
+body {
+  background-image: linear-gradient(-225deg, #d6e0f0, #8d93ab);
+}
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.navbar {
+  background-color: #f1f3f8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+  color: #2b2e4a !important;
+}
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f1f3f8;
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #40514e;
+}
+/* #posttitle{
+    width: 70%;
+} */
+
+.brandlogo {
+  width: 80px;
+  height: 80px;
+}
+.brandlogo:hover {
+  box-shadow: 2px 4px 4px 2px grey;
+}
+.homepic {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  border-radius: 100%;
+  padding: 0px;
+  transition: transform 0.5s ease;
+}
+.homepic:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 4px 4px 8px 4px #a8d8ea;
+}
+.homegallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: darkslategrey !important;
+
+  transition: transform 0.75s ease;
+  font-weight: bold;
+}
+.heading:hover {
+  transform: scale(1.1, 1.1);
+  text-shadow: 2px 4px 2px lightskyblue;
+}
+h1 {
+  color: rgb(2, 48, 66);
+  font-weight: 300;
+}

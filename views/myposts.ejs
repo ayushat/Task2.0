@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%>
+
+<h1>My Posts</h1>
+<% posts.forEach((post) => { %>
+
+<div class="jumbotron">
+  <h2>
+    <span style="background-color: rgb(212, 209, 209)"><%= post.title %></span>
+  </h2>
+  <br />
+  <p><%= post.content %></p>
+
+  <form action="/delete" method="post">
+    <br />
+    <button
+      class="btn btn-danger btn-lg"
+      type="submit"
+      name="deletebtn"
+      value="<%= post._id%>"
+    >
+      Delete
+    </button>
+  </form>
+  <a class="btn btn-primary btn-lg pt-3" href="/edit/<%= post._id%>">Edit</a>
+</div>
+<% }) %>
+
+<!-- include('partials/footer');   -->

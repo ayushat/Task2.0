@@ -1,0 +1,32 @@
+<%- include('partials/header'); -%>
+
+<h1>Update a Post</h1>
+<div class="form-group">
+  <form action="/edit/<%= post._id %>" method="POST">
+    <label for="posttitle">Title</label><br />
+    <input
+      class="form-control"
+      id="postHead"
+      type="text"
+      name="postTitle"
+      value="<%= postHeading %>"
+      autofocus
+      required
+    /><br />
+    <label for="posttext">Post</label><br />
+    <textarea
+      class="form-control"
+      name="postBody"
+      cols="116"
+      rows="6"
+      autofocus
+      required
+      autocomplete="off"
+    >
+<%= postBody %></textarea
+    ><br />
+    <button type="submit" class="btn btn-primary" name="button">Update</button>
+  </form>
+</div>
+
+<%- include('partials/footer'); -%>
